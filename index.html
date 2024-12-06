@@ -8,37 +8,116 @@
 </head>
 <body>
     <header>
-        <h1>Aplicações de Nanotecnologia Celular</h1>
-        <p>Descubra como a nanotecnologia está revolucionando o tratamento celular!</p>
+        <div class="container">
+            <div><h1>Exploradores da Cura</h1></div>
+            <div><img id="imgLogo" src="logo.png" alt="Logo"></div>
+        </div>
+        <h5 id="inicio">Nanorobôs no Combate às Células Cancerígenas Dentro dos Vasos Sanguíneos</h5>
     </header>
 
-    <section class="content">
-        <h2>O que é a Nanotecnologia Celular?</h2>
-        <p>A nanotecnologia celular envolve o uso de materiais em escala nanométrica para melhorar os processos celulares e tratamentos médicos. Este avanço tem sido fundamental no desenvolvimento de terapias inovadoras para doenças complexas, como câncer e doenças degenerativas.</p>
+    <!-- Menu de tópicos -->
+    <nav>
+        <ul>
+            <li><a href="#globulos">Células</a>
+                <ul class="submenu">
+                    <li><a href="#globulos">Saúdavel x cancerígena</a></li>
+                    <li><a href="#sanguinea">Sanguínea</a></li>
+                </ul>
+            </li>
+            <li><a href="#sanguinea">Processos</a>
+                <ul class="submenu">
+                    <li><a href="mitose.html">Mitose</a></li>
+                    <li><a href="metastase.html">Metástase</a></li>
+                </ul>
+            </li>
+            <li><a href="#tipos-cancer">Alguns Tipos de Câncer</a></li>
+            <li><a href="#nanorobos">Nanorobôs</a></li>
+            <li><a href="#video">Vídeo</a></li>
+            <li><a href="autores.html">Autores</a></li>
+        </ul>
+    </nav>
+
+    <br>
+    <div class="subCabecalho"></div>
+
+    <!-- Conteúdo -->
+    <section class="content" id="globulos">
+        <h2>Diferença entre uma célula saudável, e cancerígena</h2>
+        <p>As células cancerosas se dividem (processo de <a href="mitose.html">mitose</a>) mais rapidamente do que as normais e geralmente são bem desorganizadas. Com o tempo, podem se empilhar umas sobre as outras, formando uma massa de tecido chamada tumor. Todo esse processo, em que uma célula normal se torna um tumor maligno ou câncer, pode levar muitos anos. Existe o tumor benigno e maligno. Benigno: células parecidas, geralmente ficam contidas em um compartimento, facilitando um processo cirúrgico. Maligno (câncer): as células se multiplicam e invadem outras regiões, dificultando uma cirurgia, e essas células se diferenciam uma das outras e podem alcançar vasos sanguíneos, levando as células com problema para outras regiões, esse processo chama-se: <a href="metastase.html">Metástase</a>.</p>
+        <div class="celulas">
+            <img src="https://img.freepik.com/vetores-premium/ilustracao-vetorial-de-celulas-normais-e-celulas-cancerigenas_33402-612.jpg" alt="Células saudáveis e cancerígenas">
+        </div>
+        <div class="explicacoes">
+            <p>(Célula saudável)</p>
+            <p>(Célula cancerígena)</p>
+        </div>
     </section>
 
-    <section class="image">
-        <h2>Imagem de Nanotecnologia em Células</h2>
-        <img src="https://static.wixstatic.com/media/6088f0_5e9666d86cfc4953af806be60964f54d~mv2.jpg/v1/fill/w_734,h_413,al_c,lg_1,q_80,enc_auto/6088f0_5e9666d86cfc4953af806be60964f54d~mv2.jpg" alt="Nanotecnologia Celular">
+    <section class="content" id="sanguinea">
+        <h2 class="titulocentro">Células sanguíneas</h2>
+        <div class="geralcelulas">
+            <div><img id="imgGlobulos" src="https://revista.abrale.org.br/wp-content/uploads/2020/09/shutterstock_250424386.jpg" alt="Células sanguíneas"></div>
+            <div>
+                <p>As células sanguíneas desempenham papéis essenciais no corpo humano, cada uma com funções específicas e um ciclo de vida natural que inclui a apoptose, a morte celular programada. Elas são produzidas na medula óssea, localizada na cavidade interna dos ossos, por meio das células-tronco hematopoiéticas. Esse processo pode ser alterado em casos de câncer, tanto hematológicos quanto em outros tipos.</p>
+                <p>O sangue é composto por plasma, que contém água e proteínas, e por três tipos de células: glóbulos vermelhos, glóbulos brancos e plaquetas. Os glóbulos vermelhos, ou hemácias, transportam oxigênio e removem o gás carbônico dos tecidos, e sua cor vermelha é devida à hemoglobina. Eles vivem cerca de 120 dias e são destruídos no baço.</p>
+                <p>Os glóbulos brancos, ou leucócitos, protegem o corpo contra infecções por meio da fagocitose, que envolve a digestão dos invasores, e da produção de anticorpos. Existem diferentes tipos de leucócitos, cada um com funções específicas no sistema imunológico.</p>
+                <p>As plaquetas são responsáveis pela coagulação do sangue e pela prevenção de hemorragias, formando um "tampão" para selar lesões e controlar a perda de sangue. Em uma pessoa saudável, a contagem de plaquetas varia de 150.000 a 450.000/mm³. A medula óssea é vital para a produção de todas essas células e componentes do sangue.</p>
+            </div>
+        </div>
     </section>
 
-    <section class="video">
-        <h2>Vídeo sobre Nanotecnologia Celular</h2>
+    <section class="content" id="tipos-cancer">
+        <h2>Alguns tipos de câncer que invadem os vasos sanguíneos</h2>
+        <p>Existem alguns tipos de câncer que podem <u>invadir os vasos sanguíneos</u>, como o angiossarcoma e o hemangioendotelioma:</p>
+        <br>
+        <strong><p>Angiossarcoma</p></strong>
+        <p>Um sarcoma agressivo que se desenvolve nos vasos sanguíneos e pode atingir órgãos internos, como o fígado, o baço, o coração e a pele. O principal sintoma em estágio avançado são manchas vermelhas na pele.</p>
+        <br>
+        <strong><p>Hemangioendotelioma</p></strong>
+        <p>Um tumor dos vasos sanguíneos que cresce e se espalha lentamente. Pode começar nas partes moles ou em órgãos internos, como fígado ou pulmões.</p>
+        <br>
+        <p>Além disso, existem os cânceres hematológicos, que são tumores malignos que <u>afetam o sangue</u>, como a leucemia, o linfoma e o mieloma múltiplo:</p>
+        <br>
+        <strong><p>Leucemia</p></strong>
+        <p>Tem origem na medula óssea e afeta os glóbulos brancos (leucócitos). Na fase inicial, não apresenta nenhum tipo de sintoma, mas conforme acontece o seu avanço pelo organismo, a doença pode apresentar alguns sinais aparentes, como sangramentos recorrentes e manchas pelo corpo.</p>
+        <br>
+        <strong><p>Linfoma</p></strong>
+        <p>Afeta principalmente os linfonodos, mas podem se espalhar para outros órgãos, como fígado, baço, medula óssea e sistema nervoso central.</p>
+        <br>
+        <strong><p>Mieloma múltiplo</p></strong>
+        <p>As células malignas podem causar lesões ósseas em vários locais e afetar a função renal.</p>
+    </section>
+
+    <section class="content" id="nanorobos">
+        <h2 class="titulocentro">Nanorobôs no combate às células cancerígenas</h2>
+        <div class="geralnanorobo">
+            <div><p>Os nanorrobôs são máquinas em miniatura que operam em uma escala tão pequena
+                 (<a href="nanometro.html">escala nanométrica</a>) que não podem ser vistas a olho nu.
+                  Eles são construídos a partir de materiais como polímeros, metais e biocompatíveis, e
+                   podem ser programados para executar uma variedade de funções. A ideia dessas máquinas
+                    surgiu da necessidade de desenvolver tecnologias que pudessem interagir com sistemas
+                     biológicos de maneira precisa e controlada. Seu funcionamento é baseado em princípios da física,
+                      química e biologia, permitindo que eles realizem tarefas complexas em ambientes desafiadores.</p>
+                    <p>Os nano robôs são injetados por via intravenosa e, uma vez dentro da corrente sanguínea,
+                         são programados para procurar por tumores, sem agredir nenhuma célula saudável durante a trajetória.
+                    Quando eles encontram, liberam drogas dentro das células cancerosas, interrompendo o fluxo de sangue e, 
+                        consequentemente, provocando sua morte.</p></div>
+            
+                      
+            <div><img src="https://urocirurgia.com.br/wp-content/uploads/2019/02/08-02_DrPedro_BLOG.png" alt=""></div>
+        
+        </div>
+    </section>
+
+    <section class="content" id="video">
+        <h2 class="tituloVideo">Vídeo da Biomaquete / Explicação Didática sobre o Assunto</h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/PQOyizaJ4u8" title="Nanotecnologia Celular" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
+    <br>
+    <a class="Inicio" href="index.html">Voltar ao Início</a>
 
     <footer>
         <p>&copy; 2024 Nanotecnologia Celular</p>
     </footer>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            console.log("Página carregada com sucesso!");
-            const image = document.querySelector('.image img');
-            image.addEventListener('click', function() {
-                alert('Você clicou na imagem de nanotecnologia!');
-            });
-        });
-    </script>
 </body>
 </html>

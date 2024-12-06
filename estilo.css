@@ -19,11 +19,84 @@ header {
 }
 
 header h1 {
-    font-size: 2.5rem;
+    text-align: center;
+    font-family: "Andale Mono", monospace;
 }
 
 header p {
     font-size: 1.2rem;
+}
+
+nav {
+    background-color: #3399ff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative; /* Necessário para posicionar o submenu */
+}
+
+nav ul li a {
+    display: block; /* Faz o link ocupar toda a largura do li */
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #3399ff;
+    color: white;
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #287acc; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo para o submenu */
+.submenu {
+    list-style: none; /* Remove a marcação da lista */
+    padding: 0; /* Remove o padding extra */
+    display: none; /* Inicialmente, o submenu fica escondido */
+    background-color: #e6f7ff;
+    margin: 0; /* Remove a margem extra */
+    position: absolute; /* Torna o submenu flutuante */
+    top: 100%; /* Posiciona o submenu logo abaixo do item principal */
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+    border-radius: 5px; /* Bordas arredondadas para o submenu */
+}
+
+nav ul li:hover .submenu {
+    display: block; /* Exibe o submenu quando o item principal é hover */
+}
+
+.submenu li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Linha de separação entre os itens */
+}
+
+.submenu li:last-child {
+    border-bottom: none; /* Remove a linha de separação do último item */
+}
+
+.submenu li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 3px; /* Borda arredondada */
+    transition: background-color 0.3s;
+}
+
+.submenu li a:hover {
+    background-color: #3399ff;
+    color: white;
 }
 
 .content, .image, .video {
@@ -59,10 +132,82 @@ iframe {
     border-radius: 8px;
 }
 
-footer {
-    text-align: center;
+/* Estilo para a imagem do logo */
+#imgLogo {
+    height: 50px;
+    width: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Alinha os elementos horizontalmente no centro */
+    align-items: center; /* Alinha os elementos verticalmente no centro */
+    flex-direction: row; /* Organiza os elementos em linha (horizontal) */
+    gap: 10px; /* Adiciona um pequeno espaço entre o texto e a imagem */
+}
+
+h1 {
+    margin: 0; /* Remove qualquer margem do título */
+}
+
+.Inicio {
+    display: block;
+    text-align: right; /* Alinha o link à direita */
     padding: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.Inicio:hover {
     background-color: #3399ff;
     color: white;
-    margin-top: 30px;
 }
+
+.subCabecalho {
+    text-align: center;
+}
+
+.celulas {
+    text-align: center;
+}
+
+.explicacoes {
+    justify-content: center;
+    display: flex;
+    gap: 250px;
+}
+
+.geralcelulas {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Ajuste conforme necessário */
+    gap: 20px; /* Espaço entre os elementos */
+}
+
+#imgGlobulos {
+    height: 350px;
+    width: auto;
+}
+
+.titulocentro {
+    text-align: center;
+}
+
+.geralnanorobo {
+    display: flex;
+    justify-content: space-between; /* Espalha os elementos */
+    align-items: center; /* Alinha verticalmente */
+    gap: 20px; /* Espaço entre o texto e a imagem */
+}
+
+.geralnanorobo p {
+    flex: 1; /* Faz com que o texto ocupe o máximo de espaço possível */
+    margin: 0; /* Remove margens padrão */
+    padding: 10px; /* Adiciona um pouco de espaço interno */
+}
+
+.geralnanorobo img {
+    width: auto; /* Define a largura da imagem como 50% do contêiner pai */
+    height: 250px; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Opcional: arredonda os cantos da imagem */
+}
+
