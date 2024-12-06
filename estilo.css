@@ -19,7 +19,6 @@ header {
 }
 
 header h1 {
-    text-align: center;
     font-family: "Andale Mono", monospace;
 }
 
@@ -41,48 +40,48 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
-    position: relative; /* Necessário para posicionar o submenu */
+    position: relative;
 }
 
 nav ul li a {
-    display: block; /* Faz o link ocupar toda a largura do li */
+    display: block;
     padding: 10px 15px;
     text-decoration: none;
     background-color: #3399ff;
     color: white;
-    border-radius: 5px; /* Adiciona bordas arredondadas */
+    border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #287acc; /* Cor de fundo ao passar o mouse */
+    background-color: #287acc;
 }
 
 /* Estilo para o submenu */
 .submenu {
-    list-style: none; /* Remove a marcação da lista */
-    padding: 0; /* Remove o padding extra */
-    display: none; /* Inicialmente, o submenu fica escondido */
+    list-style: none;
+    padding: 0;
+    display: none;
     background-color: #e6f7ff;
-    margin: 0; /* Remove a margem extra */
-    position: absolute; /* Torna o submenu flutuante */
-    top: 100%; /* Posiciona o submenu logo abaixo do item principal */
+    margin: 0;
+    position: absolute;
+    top: 100%;
     left: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
-    border-radius: 5px; /* Bordas arredondadas para o submenu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 nav ul li:hover .submenu {
-    display: block; /* Exibe o submenu quando o item principal é hover */
+    display: block;
 }
 
 .submenu li {
     padding: 10px;
-    border-bottom: 1px solid #ddd; /* Linha de separação entre os itens */
+    border-bottom: 1px solid #ddd;
 }
 
 .submenu li:last-child {
-    border-bottom: none; /* Remove a linha de separação do último item */
+    border-bottom: none;
 }
 
 .submenu li a {
@@ -90,7 +89,7 @@ nav ul li:hover .submenu {
     text-decoration: none;
     display: block;
     padding: 5px 10px;
-    border-radius: 3px; /* Borda arredondada */
+    border-radius: 3px;
     transition: background-color 0.3s;
 }
 
@@ -132,7 +131,6 @@ iframe {
     border-radius: 8px;
 }
 
-/* Estilo para a imagem do logo */
 #imgLogo {
     height: 50px;
     width: 50px;
@@ -140,19 +138,19 @@ iframe {
 
 .container {
     display: flex;
-    justify-content: center; /* Alinha os elementos horizontalmente no centro */
-    align-items: center; /* Alinha os elementos verticalmente no centro */
-    flex-direction: row; /* Organiza os elementos em linha (horizontal) */
-    gap: 10px; /* Adiciona um pequeno espaço entre o texto e a imagem */
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
 }
 
 h1 {
-    margin: 0; /* Remove qualquer margem do título */
+    margin: 0;
 }
 
 .Inicio {
     display: block;
-    text-align: right; /* Alinha o link à direita */
+    text-align: center;
     padding: 10px;
     color: #000;
     text-decoration: none;
@@ -179,8 +177,8 @@ h1 {
 
 .geralcelulas {
     display: grid;
-    grid-template-columns: 1fr 2fr; /* Ajuste conforme necessário */
-    gap: 20px; /* Espaço entre os elementos */
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
 }
 
 #imgGlobulos {
@@ -194,20 +192,105 @@ h1 {
 
 .geralnanorobo {
     display: flex;
-    justify-content: space-between; /* Espalha os elementos */
-    align-items: center; /* Alinha verticalmente */
-    gap: 20px; /* Espaço entre o texto e a imagem */
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
 .geralnanorobo p {
-    flex: 1; /* Faz com que o texto ocupe o máximo de espaço possível */
-    margin: 0; /* Remove margens padrão */
-    padding: 10px; /* Adiciona um pouco de espaço interno */
+    flex: 1;
+    margin: 0;
+    padding: 10px;
 }
 
 .geralnanorobo img {
-    width: auto; /* Define a largura da imagem como 50% do contêiner pai */
-    height: 250px; /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Opcional: arredonda os cantos da imagem */
+    width: auto;
+    height: 250px;
+    border-radius: 8px;
 }
 
+/* Media Queries para responsividade */
+
+/* Para telas menores que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column; /* Muda para coluna no mobile */
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .content, .image, .video {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .geralcelulas {
+        grid-template-columns: 1fr; /* Muda para uma coluna em dispositivos móveis */
+    }
+
+    .explicacoes {
+        flex-direction: column; /* Organiza as explicações em coluna */
+        gap: 20px;
+    }
+
+    .geralnanorobo {
+        flex-direction: column; /* Coloca o texto e a imagem em coluna */
+        align-items: flex-start;
+    }
+
+    .geralnanorobo img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+/* Para telas menores que 480px (celulares) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    nav ul li a {
+        padding: 8px 10px; /* Menor espaçamento no menu */
+    }
+
+    .content, .image, .video {
+        padding: 8px;
+        margin: 5px;
+    }
+
+    .geralcelulas {
+        grid-template-columns: 1fr; /* Para celulares, usa uma coluna */
+    }
+
+    .geralnanorobo p {
+        font-size: 0.9rem;
+    }
+
+    iframe {
+        height: 200px; /* Ajusta o tamanho do iframe */
+    }
+
+    #imgLogo {
+        height: 40px;
+        width: 40px; /* Reduz o tamanho do logo no mobile */
+    }
+}
